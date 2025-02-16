@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shoes - Luxury Footwear</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-custom {
+            background-color: #343a40;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar-custom .navbar-brand {
+            color: #ffcc00 !important;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .navbar-custom .nav-link {
+            color: #ffffff !important;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-custom .nav-link:hover {
+            color: #ffcc00 !important;
+        }
+
+        .navbar-custom .navbar-toggler {
+            border-color: #ffffff;
+        }
+
+        .navbar-custom .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        .landing {
+            background: url('luxury-footwear-background.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            color: #fff;
+        }
+
+        .landing .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1;
+        }
+
+        .landing .landing-content {
+            z-index: 2;
+        }
+
+        .landing h1 {
+            font-size: 60px;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+            animation: fadeIn 2s ease-out;
+        }
+
+        .landing p {
+            font-size: 22px;
+            margin-bottom: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 5px;
+            animation: fadeIn 3s ease-out;
+        }
+
+        .btn-shop {
+            background-color: #ff5722;
+            color: white;
+            font-size: 20px;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-shop:hover {
+            background-color: #e64a19;
+            transform: translateY(-5px);
+        }
+
+        .footer-custom {
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 16px;
+            box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .landing h1 {
+                font-size: 40px;
+            }
+
+            .landing p {
+                font-size: 18px;
+            }
+
+            .btn-shop {
+                font-size: 18px;
+                padding: 12px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Shoes</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="landing">
+    <div class="overlay"></div>
+    <div class="landing-content">
+        <h1>Step Into Luxury</h1>
+        <p>Designed for comfort, crafted for style. Discover footwear that blends elegance with performance.</p>
+        <p>Explore our exclusive collection and elevate your shoe game.</p>
+        <a href="shop.html" class="btn-shop">Shop Now</a>
+    </div>
+</section>
+
+<footer class="footer-custom">
+    <p>&copy; 2025 G-Shoes. All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
